@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Назва сторінки</title>
+    <link rel="icon" type="image/x-icon" href="img/icon.png">
+
+</head>
+<body>
+    <h1 id="C4"> Мій перший заголовок</h1>
+    <p>Мій перший параграф.</p>
+    <h1>Це заголовок 1</h1>
+    <h2>Це заголовок 2</h2>
+    <h3>Це заголовок 3</h3>
+    <p>Це параграф.</p>
+    <p>Це інший параграф.</p>
+    <a href="https://w3schoolsua.github.io/">Це посилання</a>
+    <img src="img/1.jpg" alt="Кіт" width="104" height="142">
+    <button>Натисніть мене</button>
+    <h2>Невпорядкований список HTML</h2>
+    <ul>
+        <li>Кава</li>
+        <li>Чай</li>
+        <li>Молоко</li>
+    </ul>
+
+    <h2>Впорядкований список HTML</h2>
+    <ol>
+        <li>Кава</li>
+        <li>Чай</li>
+        <li>Молоко</li>
+    </ol>
+    <p>Це параграф<br> з обривом рядка.</p>
+    <p style="color:red">Це параграф червоного кольору.</p>
+    <p title='Я виринаюча підказка'>
+        Це параграф.
+    </p>
+    <pre>
+        І ось ідем у бою життєвому.
+      
+        Міцні, тверді, незламні мов граніт,
+      
+        Бо плач не дав свободи ще нікому,
+      
+        А хто борець, той здобуває світ.
+    </pre>
+    <style>
+        a:link {
+          color: green;
+          background-color: transparent;
+          text-decoration: none;
+        }
+        
+        a:visited {
+          color: pink;
+          background-color: transparent;
+         text-decoration: none;
+        }
+        
+        a:hover {
+          color: red;
+          background-color: transparent;
+          text-decoration: underline;
+        }
+        
+        a:active {
+          color: yellow;
+          background-color: transparent;
+         text-decoration: underline;
+        }
+        </style>
+    
+    <style>
+        a:link, a:visited {
+          background-color: #f44336;
+          color: white;
+          padding: 15px 25px;
+          text-align: center;
+          text-decoration: none;
+          display: inline-block;
+        }
+        
+        a:hover, a:active {
+          background-color: red;
+        }
+    </style>
+        
+    <a href="https://www.w3schools.com/" target="_blank">Відвідайте W3Schools!</a>
+        
+    <a href="https://www.w3schools.com/html/" target="_top">HTML5 Підручник!</a>
+        
+    <a href="index.html">
+        <img src="img/1.jpg" alt="HTML уроки для початківців" style="width:42px;height:42px;border:0;">
+    </a>
+
+    <h2 id="C4">Розділ 4</h2>
+
+    <a href="#C4">Перейти до розділу 4</a>
+
+    <img src="img/2.jpg" alt="cat" style="width:400px;height:300px;">
+    <p><img src="img/2.jpg" alt="Smiley face" style="float:right;width:42px;height:42px;">
+        Зображення буде плавати праворуч від тексту.</p>
+            
+    <p><img src="img/2.jpg" alt="Smiley face" style="float:left;width:42px;height:42px;">
+        Зображення буде плавати ліворуч від тексту.</p>
+            
+    <img src="img/workplace.jpg" alt="Workplace" usemap="#workmap">
+
+    <map name="workmap">
+        <area shape="rect" coords="34,44,270,350" alt="Комп’ютер" onclick="PC()">
+        <area shape="rect" coords="290,172,333,250" alt="Телефон" onclick="Telephone()">
+        <area shape="circle" coords="337,300,44" alt="Кава" onclick="Coffee()">
+    </map>
+    <script>
+        function Coffee() {
+            alert("Ви клацнули чашкою кави!");
+        }
+        function PC() {
+            alert("Ви клацнули ноутбуком!");
+        }
+        function Telephone() {
+        alert("Ви клацнули телефоном!");
+        }
+    </script>
+
+    <div style="background-image: url('img/3.jpg');">
+        Ви можете вказати фонові зображення<br>
+    для будь-якого видимого елементу HTML.<br>
+    В цьому прикладі фонове зображення<br>
+    вказане для елемента div.<br>
+    За замовчуванням фонове зображення<br>
+    повториться в напрямку (ах)<br>
+    де воно менше елемента,<br>
+    в якому вказане. (Спробуйте змінити розмір<br>
+    вікна браузера, щоб побачити, як<br>
+    фонове зображення поводить себе.
+    </div>
+
+    <style>
+        body {
+          background-image: url('img/3.jpg');
+        }
+    </style>
+
+<style>
+    body {
+        background-image: url('img/3.jpg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        background-size: 100% 100%;
+    }
+    </style>
+<picture>
+    <source media="(min-width: 650px)" srcset="img/1.jpg">
+    <source media="(min-width: 465px)" srcset="img/2.jpg">
+    <img src="img/3.jpg">
+</picture>
+
+<table style="width:100%">
+    <tr>
+      <th>Firstname</th>
+      <th>Lastname</th>
+      <th>Age</th>
+    </tr>
+    <tr>
+      <td>Jill</td>
+      <td>Smith</td>
+      <td>50</td>
+    </tr>
+    <tr>
+      <td>Eve</td>
+      <td>Jackson</td>
+      <td>94</td>
+    </tr>
+  </table>
+
+ <style>
+    table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+ </style> 
+ <style>
+    th, td {
+    padding: 15px;
+}
+ </style>
+
+ <style>
+  th {
+  text-align: left;
+}
+ </style>
+
+ <style>
+    table {
+    border-spacing: 5px;
+}
+ </style>
+
+<table style="width:100%">
+    <tr>
+      <th>Name</th>
+      <th colspan="2">Telephone</th>
+    </tr>
+    <tr>
+      <td>Bill Gates</td>
+      <td>55577854</td>
+      <td>55577855</td>
+    </tr>
+  </table>
+
+  <table style="width:100%">
+    <tr>
+      <th>Name:</th>
+      <td>Bill Gates</td>
+    </tr>
+    <tr>
+      <th rowspan="2">Telephone:</th>
+      <td>55577854</td>
+    </tr>
+    <tr>
+      <td>55577855</td>
+    </tr>
+  </table>
+
+  <table style="width:100%">
+    <caption>Monthly savings</caption>
+    <tr>
+      <th>Month</th>
+      <th>Savings</th>
+    </tr>
+    <tr>
+      <td>January</td>
+      <td>$100</td>
+    </tr>
+    <tr>
+      <td>February</td>
+      <td>$50</td>
+    </tr>
+  </table>
+
+  <table id="t01">
+    <tr>
+      <th>Firstname</th>
+      <th>Lastname</th>
+      <th>Age</th>
+    </tr>
+    <tr>
+      <td>Eve</td>
+      <td>Jackson</td>
+      <td>94</td>
+    </tr>
+  </table>
+
+  <style>
+    #t01 {
+  width: 100%;
+  background-color: #f1f1c1;
+}
+  </style>
+
+<ul style="list-style-type:disc;">
+    <li>Coffee</li>
+    <li>Tea</li>
+    <li>Milk</li>
+  </ul>
+
+  <ul style="list-style-type:circle;">
+    <li>Coffee</li>
+    <li>Tea</li>
+    <li>Milk</li>
+  </ul>
+
+  <ul style="list-style-type:square;">
+    <li>Coffee</li>
+    <li>Tea</li>
+    <li>Milk</li>
+  </ul>
+
+  <ul style="list-style-type:none;">
+    <li>Coffee</li>
+    <li>Tea</li>
+    <li>Milk</li>
+  </ul>
+
+  <ol type="1">
+    <li>Coffee</li>
+    <li>Tea</li>
+    <li>Milk</li>
+  </ol>
+
+  <ol type="A">
+    <li>Coffee</li>
+    <li>Tea</li>
+    <li>Milk</li>
+  </ol>
+
+  <ol type="a">
+    <li>Coffee</li>
+    <li>Tea</li>
+    <li>Milk</li>
+  </ol>
+
+  <ol type="I">
+    <li>Coffee</li>
+    <li>Tea</li>
+    <li>Milk</li>
+  </ol>
+
+  <ol type="i">
+    <li>Coffee</li>
+    <li>Tea</li>
+    <li>Milk</li>
+  </ol>
+
+  <dl>
+    <dt>Кава</dt>
+    <dd>- чорний гарячий напій</dd>
+    <dt>Молоко</dt>
+    <dd>- білий холодний напій</dd>
+  </dl>
+
+  <ul>
+    <li>Кава</li>
+    <li>Чай
+      <ul>
+        <li>Чорний чай</li>
+        <li>Зелений чай</li>
+      </ul>
+    </li>
+    <li>Молоко</li>
+  </ul>
+
+  <ol start="50">
+    <li>Кава</li>
+    <li>Чай</li>
+    <li>Молоко</li>
+  </ol>
+
+  <form>
+    Ім’я:<br>
+     <input type='text' name='firstname'><br>
+    Прізвище:<br>
+     <input type='text' name='lastname'>
+   </form>
+
+   <form>
+    <input type='radio' name='gender" value='male' checked> Чоловіча<br>
+   <input type='radio' name='gender' value='female'> Жіноча<br>
+   <input type='radio' name='gender' value='other'> Інше
+  </form>
+
+  <form action='/action_page.html'>
+    Ім’я:<br>
+    <input type='text' name='firstname' value='Mickey'><br>
+    Прізвище:<br>
+    <input type='text' name='lastname' value='Mouse'><br><br>
+    <input type='submit' value='Надіслати'>
+  </form>
+
+  <form action='/action_page.html'>
+    First name:<br>
+    <input type='text' value='Mickey'><br>
+    Last name:<br>
+    <input type='text' name='lastname' value='Mouse'><br><br>
+    <input type='submit' value='Надіслати'>
+  </form>
+
+  <form action='/action_page.html'>
+    <fieldset>
+      <legend>Особиста інформація:</legend>
+      Ім’я:<br>
+      <input type='text' name='firstname' value='Mickey'><br>
+      Прізвище:<br>
+      <input type='text' name='lastname' value='Mouse'><br><br>
+      <input type='submit' value='Надіслати'>
+    </fieldset>
+  </form>
+
+  
+
+  
+
+
+
+    
+</body>
+</html>
